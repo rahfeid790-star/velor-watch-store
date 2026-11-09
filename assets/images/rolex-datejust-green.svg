@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <!-- Dark natural stone background vignette -->
+    <radialGradient id="stoneGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#14362d" stop-opacity="0.8"/>
+      <stop offset="45%" stop-color="#0b231d" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#051410" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Olive / Mint Emerald Sunburst Dial -->
+    <radialGradient id="rolexGreenDial" cx="45%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1f634f"/>
+      <stop offset="40%" stop-color="#134436"/>
+      <stop offset="80%" stop-color="#0a2920"/>
+      <stop offset="100%" stop-color="#051712"/>
+    </radialGradient>
+
+    <!-- Fluted Bezel Steel Gradient -->
+    <linearGradient id="flutedSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="15%" stop-color="#C5CCD4"/>
+      <stop offset="30%" stop-color="#838E99"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#7B8793"/>
+      <stop offset="85%" stop-color="#B2BAC2"/>
+      <stop offset="100%" stop-color="#4E5862"/>
+    </linearGradient>
+
+    <!-- Jubilee / Oyster Bracelet Steel -->
+    <linearGradient id="braceletSteel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7A8692"/>
+      <stop offset="25%" stop-color="#DCE2E6"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="75%" stop-color="#B8C1C9"/>
+      <stop offset="100%" stop-color="#697480"/>
+    </linearGradient>
+
+    <!-- Gold Accent / Crown -->
+    <linearGradient id="goldCrown" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA7"/>
+      <stop offset="50%" stop-color="#D4A762"/>
+      <stop offset="100%" stop-color="#9C7332"/>
+    </linearGradient>
+
+    <filter id="watchShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="25" stdDeviation="25" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- NATURAL STONE TEXTURE UNDERLAY -->
+  <g opacity="0.35">
+    <ellipse cx="300" cy="400" rx="270" ry="240" fill="url(#stoneGlow)"/>
+    <path d="M 80,300 Q 140,240 260,250 T 480,290 T 520,480 T 360,560 T 100,460 Z" fill="#071a15" opacity="0.7"/>
+    <path d="M 120,340 Q 200,310 320,330 T 460,420 T 380,510 T 140,430 Z" fill="#0d2821" opacity="0.5"/>
+  </g>
+
+  <!-- WATCH BODY WITH SHADOW -->
+  <g filter="url(#watchShadow)">
+    
+    <!-- TOP BRACELET (Jubilee / Oyster Steel) -->
+    <g>
+      <path d="M 235,50 L 365,50 L 350,230 L 250,230 Z" fill="url(#braceletSteel)" stroke="#4A5560" stroke-width="1.5"/>
+      <!-- Bracelet Links Pattern -->
+      <line x1="238" y1="90" x2="362" y2="90" stroke="#4A5560" stroke-width="2"/>
+      <line x1="242" y1="135" x2="358" y2="135" stroke="#4A5560" stroke-width="2"/>
+      <line x1="246" y1="180" x2="354" y2="180" stroke="#4A5560" stroke-width="2"/>
+      <line x1="250" y1="225" x2="350" y2="225" stroke="#4A5560" stroke-width="2"/>
+      <!-- Vertical Center Link Highlights -->
+      <rect x="282" y="50" width="36" height="175" fill="#FFFFFF" opacity="0.25"/>
+    </g>
+
+    <!-- BOTTOM BRACELET -->
+    <g>
+      <path d="M 250,570 L 350,570 L 365,720 L 235,720 Z" fill="url(#braceletSteel)" stroke="#4A5560" stroke-width="1.5"/>
+      <line x1="248" y1="605" x2="352" y2="605" stroke="#4A5560" stroke-width="2"/>
+      <line x1="244" y1="645" x2="356" y2="645" stroke="#4A5560" stroke-width="2"/>
+      <line x1="240" y1="685" x2="360" y2="685" stroke="#4A5560" stroke-width="2"/>
+      <rect x="282" y="575" width="36" height="145" fill="#FFFFFF" opacity="0.25"/>
+    </g>
+
+    <!-- SOLID CASE LUGS -->
+    <polygon points="215,220 260,205 240,285 200,270" fill="url(#flutedSteel)"/>
+    <polygon points="385,220 340,205 360,285 400,270" fill="url(#flutedSteel)"/>
+    <polygon points="215,580 260,595 240,515 200,530" fill="url(#flutedSteel)"/>
+    <polygon points="385,580 340,595 360,515 400,530" fill="url(#flutedSteel)"/>
+
+    <!-- TWINLOCK WINDING CROWN AT 3 O'CLOCK -->
+    <polygon points="496,380 514,383 514,417 496,420" fill="url(#flutedSteel)" stroke="#333"/>
+    <!-- Crown Ridges -->
+    <line x1="502" y1="382" x2="502" y2="418" stroke="#444" stroke-width="1.5"/>
+    <line x1="508" y1="384" x2="508" y2="416" stroke="#444" stroke-width="1.5"/>
+    <circle cx="513" cy="400" r="2" fill="#D4A762"/>
+
+    <!-- OYSTER CASE (41mm Proportion) -->
+    <circle cx="300" cy="400" r="202" fill="#202A32" stroke="#12181C" stroke-width="2"/>
+    <circle cx="300" cy="400" r="195" fill="url(#flutedSteel)"/>
+
+    <!-- ICONIC ROLEX FLUTED BEZEL (Faceted light reflections) -->
+    <circle cx="300" cy="400" r="185" fill="#1C262C"/>
+    <g stroke="url(#flutedSteel)" stroke-width="3">
+      <!-- 48 Fluted Facet Notches -->
+      <circle cx="300" cy="400" r="182" fill="none" stroke="url(#flutedSteel)" stroke-width="8" stroke-dasharray="3 4"/>
+    </g>
+    <circle cx="300" cy="400" r="176" fill="url(#flutedSteel)"/>
+
+    <!-- INNER ROLEX REHAUT (ROLEX ROLEX engraved ring) -->
+    <circle cx="300" cy="400" r="168" fill="#0C1F19" stroke="#9BB2A8" stroke-width="1"/>
+    <circle cx="300" cy="400" r="163" fill="none" stroke="#5D7A70" stroke-width="0.8" stroke-dasharray="1 3"/>
+
+    <!-- SUNBURST OLIVE GREEN DIAL -->
+    <circle cx="300" cy="400" r="162" fill="url(#rolexGreenDial)"/>
+
+    <!-- Sunburst Radial Rays -->
+    <g opacity="0.18" stroke="#A7D4C3" stroke-width="0.75">
+      <line x1="300" y1="400" x2="300" y2="238"/>
+      <line x1="300" y1="400" x2="380" y2="260"/>
+      <line x1="300" y1="400" x2="440" y2="320"/>
+      <line x1="300" y1="400" x2="462" y2="400"/>
+      <line x1="300" y1="400" x2="440" y2="480"/>
+      <line x1="300" y1="400" x2="380" y2="540"/>
+      <line x1="300" y1="400" x2="300" y2="562"/>
+      <line x1="300" y1="400" x2="220" y2="540"/>
+      <line x1="300" y1="400" x2="160" y2="480"/>
+      <line x1="300" y1="400" x2="138" y2="400"/>
+      <line x1="300" y1="400" x2="160" y2="320"/>
+      <line x1="300" y1="400" x2="220" y2="260"/>
+    </g>
+
+    <!-- ROLEX CORONET AT 12 O'CLOCK (Gold Crown) -->
+    <g transform="translate(300, 260) scale(0.9)" fill="url(#goldCrown)">
+      <!-- 5-Point Rolex Crown -->
+      <circle cx="-14" cy="-12" r="2.2"/>
+      <circle cx="-7" cy="-16" r="2.2"/>
+      <circle cx="0" cy="-18" r="2.5"/>
+      <circle cx="7" cy="-16" r="2.2"/>
+      <circle cx="14" cy="-12" r="2.2"/>
+      <path d="M -14,-9 L -7,-3 L 0,-15 L 7,-3 L 14,-9 L 10,2 L -10,2 Z"/>
+      <ellipse cx="0" cy="4" rx="10" ry="2.2"/>
+    </g>
+
+    <!-- DIAL TEXT (12 O'CLOCK) -->
+    <g transform="translate(300, 290)" text-anchor="middle" fill="#FFFFFF">
+      <text font-family="'Cinzel', 'Playfair Display', serif" font-size="14" font-weight="700" letter-spacing="4">ROLEX</text>
+      <text y="11" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" letter-spacing="1.5" fill="#D2E4DC">OYSTER PERPETUAL</text>
+      <text y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" letter-spacing="1.5" fill="#D2E4DC">DATEJUST</text>
+    </g>
+
+    <!-- DIAL TEXT (6 O'CLOCK) -->
+    <g transform="translate(300, 500)" text-anchor="middle" fill="#D2E4DC">
+      <text font-family="'Plus Jakarta Sans', sans-serif" font-size="6.2" font-weight="500" letter-spacing="1.5">SUPERLATIVE CHRONOMETER</text>
+      <text y="9" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="500" letter-spacing="1.5">OFFICIALLY CERTIFIED</text>
+      <text y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" font-weight="400" letter-spacing="1">SWISS  MADE</text>
+    </g>
+
+    <!-- 18K WHITE GOLD APPLIED BATON INDICES (With Chromalight lume) -->
+    <!-- 1, 2 -->
+    <rect x="368" y="270" width="7" height="22" rx="1" transform="rotate(30, 371.5, 281)" fill="#FFFFFF" stroke="#4A5560"/>
+    <rect x="424" y="324" width="7" height="22" rx="1" transform="rotate(60, 427.5, 335)" fill="#FFFFFF" stroke="#4A5560"/>
+    
+    <!-- 3 O'CLOCK: CYCLOPS MAGNIFYING LENS & DATE APERTURE -->
+    <g transform="translate(415, 385)">
+      <!-- Date Window Frame -->
+      <rect x="0" y="0" width="34" height="28" rx="2" fill="#FFFFFF" stroke="#222"/>
+      <text x="17" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#000000" text-anchor="middle">28</text>
+      <!-- Cyclops Oval Bubble with Glare -->
+      <ellipse cx="17" cy="14" rx="26" ry="20" fill="#FFFFFF" opacity="0.18"/>
+      <ellipse cx="17" cy="14" rx="25" ry="19" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.7"/>
+    </g>
+
+    <!-- 4, 5, 6, 7, 8, 9, 10, 11 BATONS -->
+    <rect x="424" y="454" width="7" height="22" rx="1" transform="rotate(120, 427.5, 465)" fill="#FFFFFF" stroke="#4A5560"/>
+    <rect x="368" y="508" width="7" height="22" rx="1" transform="rotate(150, 371.5, 519)" fill="#FFFFFF" stroke="#4A5560"/>
+    <!-- 6 O'clock Baton -->
+    <rect x="296.5" y="525" width="7" height="22" rx="1" fill="#FFFFFF" stroke="#4A5560"/>
+    <rect x="225" y="508" width="7" height="22" rx="1" transform="rotate(210, 228.5, 519)" fill="#FFFFFF" stroke="#4A5560"/>
+    <rect x="169" y="454" width="7" height="22" rx="1" transform="rotate(240, 172.5, 465)" fill="#FFFFFF" stroke="#4A5560"/>
+    <!-- 9 O'clock Baton -->
+    <rect x="148" y="389" width="22" height="7" rx="1" fill="#FFFFFF" stroke="#4A5560"/>
+    <rect x="169" y="324" width="7" height="22" rx="1" transform="rotate(300, 172.5, 335)" fill="#FFFFFF" stroke="#4A5560"/>
+    <rect x="225" y="270" width="7" height="22" rx="1" transform="rotate(330, 228.5, 281)" fill="#FFFFFF" stroke="#4A5560"/>
+
+    <!-- HANDS (10:10 Classic Luxury Setting) -->
+    <!-- Hour Hand (pointing to ~10:09) -->
+    <g transform="translate(300, 400) rotate(304)">
+      <path d="M -4.5,12 L -3.5,-95 L 0,-108 L 3.5,-95 L 4.5,12 Z" fill="#FFFFFF" stroke="#3D454E" stroke-width="1"/>
+      <rect x="-2" y="-90" width="4" height="65" fill="#C4E9DA"/>
+    </g>
+
+    <!-- Minute Hand (pointing to ~10 past) -->
+    <g transform="translate(300, 400) rotate(64)">
+      <path d="M -3.5,14 L -2.5,-140 L 0,-152 L 2.5,-140 L 3.5,14 Z" fill="#FFFFFF" stroke="#3D454E" stroke-width="1"/>
+      <rect x="-1.5" y="-132" width="3" height="105" fill="#C4E9DA"/>
+    </g>
+
+    <!-- Center Pinion -->
+    <circle cx="300" cy="400" r="8" fill="#BAC2C8" stroke="#3A434B" stroke-width="1"/>
+    <circle cx="300" cy="400" r="4" fill="#FFFFFF"/>
+
+    <!-- Sweep Seconds Hand -->
+    <g transform="translate(300, 400) rotate(220)">
+      <circle cx="0" cy="32" r="5" fill="#BAC2C8"/>
+      <line x1="0" y1="42" x2="0" y2="-164" stroke="#DCE2E6" stroke-width="1.4"/>
+      <circle cx="0" cy="0" r="2.5" fill="#1B2329"/>
+    </g>
+
+    <!-- SAPPHIRE CRYSTAL GLARE DIAGONAL -->
+    <path d="M 185,275 C 240,245 360,245 425,280 C 370,265 245,265 185,275 Z" fill="#FFFFFF" opacity="0.22"/>
+  </g>
+</svg>

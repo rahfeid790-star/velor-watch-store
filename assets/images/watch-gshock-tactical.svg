@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Matte Tactical Black Resin -->
+    <linearGradient id="matteResin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#303840"/>
+      <stop offset="40%" stop-color="#1E2328"/>
+      <stop offset="80%" stop-color="#14181B"/>
+      <stop offset="100%" stop-color="#0E1113"/>
+    </linearGradient>
+
+    <!-- Tactical Strap Resin -->
+    <linearGradient id="strapResin" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#181C20"/>
+      <stop offset="30%" stop-color="#262D34"/>
+      <stop offset="50%" stop-color="#323B44"/>
+      <stop offset="70%" stop-color="#262D34"/>
+      <stop offset="100%" stop-color="#121518"/>
+    </linearGradient>
+
+    <!-- Tactical Bezel Accent (Subtle Emerald/Olive Tactical Tint) -->
+    <linearGradient id="tacticalBezel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A4643"/>
+      <stop offset="50%" stop-color="#1E2825"/>
+      <stop offset="100%" stop-color="#101715"/>
+    </linearGradient>
+
+    <!-- Digital Inverted LCD -->
+    <radialGradient id="lcdDisplay" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#121D1A"/>
+      <stop offset="100%" stop-color="#070C0A"/>
+    </radialGradient>
+
+    <!-- Neon Accent Glow -->
+    <filter id="tacticalGlow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#tacticalGlow)">
+    <!-- TOP TACTICAL RESIN STRAP -->
+    <path d="M 195,35 L 305,35 L 290,140 L 210,140 Z" fill="url(#strapResin)" stroke="#0E1113" stroke-width="1.5"/>
+    <!-- Accordion Flex Ribs -->
+    <rect x="210" y="55" width="80" height="8" rx="2" fill="#14181B" stroke="#3A444E" stroke-width="0.8"/>
+    <rect x="214" y="75" width="72" height="8" rx="2" fill="#14181B" stroke="#3A444E" stroke-width="0.8"/>
+    <rect x="218" y="95" width="64" height="8" rx="2" fill="#14181B" stroke="#3A444E" stroke-width="0.8"/>
+    <rect x="222" y="115" width="56" height="8" rx="2" fill="#14181B" stroke="#3A444E" stroke-width="0.8"/>
+
+    <!-- BOTTOM TACTICAL RESIN STRAP -->
+    <path d="M 210,360 L 290,360 L 305,465 L 195,465 Z" fill="url(#strapResin)" stroke="#0E1113" stroke-width="1.5"/>
+    <rect x="222" y="375" width="56" height="8" rx="2" fill="#14181B" stroke="#3A444E" stroke-width="0.8"/>
+    <rect x="218" y="395" width="64" height="8" rx="2" fill="#14181B" stroke="#3A444E" stroke-width="0.8"/>
+    <rect x="214" y="415" width="72" height="8" rx="2" fill="#14181B" stroke="#3A444E" stroke-width="0.8"/>
+    <!-- Double Buckle Holes -->
+    <circle cx="240" cy="445" r="3.5" fill="#0A0D0E"/>
+    <circle cx="260" cy="445" r="3.5" fill="#0A0D0E"/>
+
+    <!-- 4 TACTICAL KNURLED PUSHERS -->
+    <!-- Top-Left (Adjust) -->
+    <rect x="115" y="190" width="14" height="22" rx="2" fill="#4B5660" stroke="#111" stroke-width="1"/>
+    <!-- Bottom-Left (Mode) -->
+    <rect x="115" y="288" width="14" height="22" rx="2" fill="#4B5660" stroke="#111" stroke-width="1"/>
+    <!-- Top-Right (Light) -->
+    <rect x="371" y="190" width="14" height="22" rx="2" fill="#4B5660" stroke="#111" stroke-width="1"/>
+    <!-- Bottom-Right (Search) -->
+    <rect x="371" y="288" width="14" height="22" rx="2" fill="#4B5660" stroke="#111" stroke-width="1"/>
+
+    <!-- OCTAGONAL SHOCK ARMOR BEZEL -->
+    <!-- Outer contour points -->
+    <polygon points="200,130 300,130 375,190 375,310 300,370 200,370 125,310 125,190" fill="url(#matteResin)" stroke="#0A0D0F" stroke-width="2"/>
+
+    <!-- Corner Shock Bumpers -->
+    <rect x="122" y="222" width="10" height="56" rx="3" fill="#20262B"/>
+    <rect x="368" y="222" width="10" height="56" rx="3" fill="#20262B"/>
+
+    <!-- Bezel Inscription Marks -->
+    <text x="250" y="146" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="800" letter-spacing="2" fill="#A0ABB5" text-anchor="middle">PROTECTION</text>
+    <text x="250" y="362" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="800" letter-spacing="2" fill="#A0ABB5" text-anchor="middle">G-SHOCK</text>
+    <text x="145" y="205" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" font-weight="700" fill="#75828D">ADJUST</text>
+    <text x="145" y="303" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" font-weight="700" fill="#75828D">MODE</text>
+    <text x="355" y="205" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" font-weight="700" fill="#75828D" text-anchor="end">LIGHT</text>
+    <text x="355" y="303" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" font-weight="700" fill="#75828D" text-anchor="end">SEARCH</text>
+
+    <!-- INNER BEZEL RING -->
+    <circle cx="250" cy="250" r="105" fill="url(#tacticalBezel)" stroke="#0E1315" stroke-width="1.5"/>
+    <circle cx="250" cy="250" r="98" fill="#141B18"/>
+
+    <!-- 3D INNER CHAPTER RING WITH 12 HEAVY INDICES -->
+    <circle cx="250" cy="250" r="94" fill="#0D1412" stroke="#263430" stroke-width="1"/>
+
+    <!-- Applied 3D Hour Markers -->
+    <rect x="246" y="160" width="8" height="15" rx="1.5" fill="#4AF2A1" stroke="#163B2B" stroke-width="0.8"/>
+    <rect x="325" y="246" width="15" height="8" rx="1.5" fill="#CCD7E0" stroke="#1A242B" stroke-width="0.8"/>
+    <rect x="246" y="325" width="8" height="15" rx="1.5" fill="#CCD7E0" stroke="#1A242B" stroke-width="0.8"/>
+    <rect x="160" y="246" width="15" height="8" rx="1.5" fill="#CCD7E0" stroke="#1A242B" stroke-width="0.8"/>
+
+    <!-- TOP INVERTED DIGITAL LCD SUBDIAL (DAY / DATE) -->
+    <rect x="205" y="196" width="90" height="24" rx="4" fill="url(#lcdDisplay)" stroke="#223830" stroke-width="1"/>
+    <text x="220" y="212" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#4AF2A1">THU</text>
+    <text x="272" y="212" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#4AF2A1">10-24</text>
+
+    <!-- BOTTOM INVERTED DIGITAL LCD SUBDIAL (DIGITAL SECONDS / 24HR) -->
+    <rect x="205" y="278" width="90" height="24" rx="4" fill="url(#lcdDisplay)" stroke="#223830" stroke-width="1"/>
+    <text x="250" y="294" font-family="'Courier New', monospace" font-size="11" font-weight="700" fill="#4AF2A1" text-anchor="middle">10:08 36</text>
+
+    <!-- BRAND EMBLEM AT CENTER-RIGHT -->
+    <text x="210" y="244" font-family="'Cinzel', serif" font-size="10" font-weight="800" letter-spacing="2" fill="#FFFFFF">VÉLOR</text>
+    <text x="210" y="254" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" font-weight="700" fill="#D4A762">WR 200M</text>
+
+    <!-- HEAVY SPORT HANDS (10:10 Setting) -->
+    <!-- Hour Hand -->
+    <g transform="translate(250, 250) rotate(305)">
+      <path d="M -5,10 L -4,-55 L 0,-65 L 4,-55 L 5,10 Z" fill="#E2EBF2" stroke="#101820" stroke-width="1"/>
+      <rect x="-2" y="-50" width="4" height="38" fill="#4AF2A1"/>
+    </g>
+
+    <!-- Minute Hand -->
+    <g transform="translate(250, 250) rotate(58)">
+      <path d="M -4.5,12 L -3.5,-80 L 0,-90 L 3.5,-80 L 4.5,12 Z" fill="#E2EBF2" stroke="#101820" stroke-width="1"/>
+      <rect x="-1.8" y="-74" width="3.6" height="58" fill="#4AF2A1"/>
+    </g>
+
+    <!-- Center Hub & Neon Red Dial Ring -->
+    <circle cx="250" cy="250" r="8" fill="#202A32" stroke="#4AF2A1" stroke-width="1.5"/>
+    <circle cx="250" cy="250" r="3" fill="#FF5252"/>
+
+    <!-- MINERAL GLASS REFLECTION -->
+    <path d="M 175,170 C 220,135 300,135 330,170 C 285,152 215,152 175,170 Z" fill="#FFFFFF" opacity="0.16"/>
+  </g>
+</svg>
+

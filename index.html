@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WatchShop | Premium Watches for Every Moment</title>
+  <meta name="description"
+    content="Discover timeless style, unmatched quality and the perfect watch for your lifestyle. Rolex, Omega, Seiko, Tissot, and luxury smartwatches.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/velor-logo.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       1. TOP UTILITY HEADER (White Bar with Search, Language & Icons)
+       ========================================================================== -->
+  <header class="ws-top-bar">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex align-items-center justify-content-between gap-3">
+
+        <!-- Logo -->
+        <a class="ws-brand-logo" href="index.html">
+          <i class="bi bi-watch text-dark fs-3 me-2"></i>
+          <span>Watch<span style="color: var(--ws-gold-tan);">Shop</span><span class="text-muted"
+              style="font-size: 0.85rem;">.com</span></span>
+        </a>
+
+        <!-- Center Search Bar -->
+        <div class="ws-search-wrap d-none d-md-block">
+          <i class="bi bi-search ws-search-icon"></i>
+          <input type="text" class="ws-search-input" placeholder="Search for your favorite watch...">
+        </div>
+
+        <!-- Right Utilities (Lang, Wishlist, User, Cart) -->
+        <div class="d-flex align-items-center gap-3">
+          <!-- Language Toggle -->
+          <button type="button"
+            class="btn btn-sm btn-outline-secondary rounded-pill px-3 velor-lang-toggle font-numeric">
+            EN <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem;"></i>
+          </button>
+
+          <!-- Wishlist -->
+          <a href="wishlist.html" class="ws-action-icon" title="Wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="ws-badge-count velor-wishlist-count" style="display: none;">0</span>
+          </a>
+
+          <!-- Account -->
+          <a href="checkout.html" class="ws-action-icon" title="My Account">
+            <i class="bi bi-person"></i>
+          </a>
+
+          <!-- Cart -->
+          <a href="cart.html" class="ws-action-icon" title="Cart">
+            <i class="bi bi-bag"></i>
+            <span class="ws-badge-count velor-cart-count" style="display: none;">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. MAIN NAVIGATION (Dark Forest Green Bar)
+       ========================================================================== -->
+  <nav class="ws-nav-bar">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex align-items-center justify-content-start flex-wrap gap-1">
+        <a href="index.html" class="ws-nav-link ws-nav-link-pill">Home</a>
+        <a href="shop.html?cat=men" class="ws-nav-link">Men's Watches</a>
+        <a href="shop.html?cat=women" class="ws-nav-link">Women's Watches</a>
+        <a href="shop.html?movement=Automatic" class="ws-nav-link">Automatic</a>
+        <a href="shop.html?movement=Chronograph" class="ws-nav-link">Chronograph</a>
+        <a href="shop.html?movement=Smart" class="ws-nav-link">Smartwatches</a>
+        <a href="#specialDeals" class="ws-nav-link">Deals</a>
+        <a href="#contactSection" class="ws-nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ==========================================================================
+         3. HERO SECTION (Dark Stone Texture & Animated Rolex Datejust 41)
+         ========================================================================== -->
+    <section class="ws-hero-section">
+      <div class="container-fluid px-lg-5">
+        <div class="row align-items-center g-5">
+
+          <!-- Left: Hero Headline & Value Props -->
+          <div class="col-lg-6">
+            <span class="ws-hero-subtitle">TIMEPIECES FOR A BETTER TOMORROW</span>
+            <h1 class="ws-hero-title">
+              Premium Watches<br>for Every Moment
+            </h1>
+            <p class="ws-hero-desc">
+              Discover timeless style, unmatched quality and the perfect watch for your lifestyle.
+            </p>
+
+            <a href="shop.html" class="btn-ws-gold">
+              Shop Now <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+
+            <!-- 4 Guarantees in a row -->
+            <div class="row g-3 ws-hero-badges">
+              <div class="col-6 col-md-3">
+                <div class="ws-badge-item">
+                  <i class="bi bi-truck"></i>
+                  <span>Free Shipping<br>Across Egypt</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="ws-badge-item">
+                  <i class="bi bi-shield-check"></i>
+                  <span>Authentic<br>Timepieces</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="ws-badge-item">
+                  <i class="bi bi-credit-card"></i>
+                  <span>Cash on<br>Delivery</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="ws-badge-item">
+                  <i class="bi bi-arrow-counterclockwise"></i>
+                  <span>14-Day<br>Returns</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Rolex Datejust 41 with Green Dial & Smooth Floating Animation -->
+          <div class="col-lg-6">
+            <div class="ws-hero-watch-wrap">
+              <img src="assets/images/rolex-datejust-green.svg" alt="Rolex Datejust 41 Green Dial Stainless Steel"
+                class="ws-hero-watch-img img-fluid">
+
+              <!-- Floating Badge with Realistic Local Price in EGP -->
+              <div class="ws-floating-price-card">
+                <i class="bi bi-crown fs-5 text-warning mb-1 d-block"></i>
+                <div class="brand-name">ROLEX</div>
+                <div class="model-name">Datejust 41</div>
+                <div class="price-tag font-numeric">4,850 EGP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. SHOP BY CATEGORY (Strictly Watch Categories Only)
+         ========================================================================== -->
+    <section class="py-5" style="background-color: #f7faf9;">
+      <div class="container-fluid px-lg-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3 class="fw-bold fs-4 mb-0 text-dark">Shop by Category</h3>
+          <a href="shop.html" class="text-decoration-none fw-semibold small" style="color: var(--ws-nav-green);">
+            Explore All <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-3">
+          <!-- 1. Men's Watches (Steel Diver) -->
+          <div class="col-6 col-md-4 col-lg">
+            <a href="shop.html?cat=men" class="ws-category-card">
+              <img src="https://images.unsplash.com/photo-1547996160-71dfabb1a7b1?auto=format&fit=crop&w=400&q=80"
+                alt="Men's Steel Watch" class="ws-category-img img-fluid">
+              <div>
+                <h6>Men's Watches</h6>
+                <span class="arrow-icon"><i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- 2. Women's Watches (Rose Gold Watch) -->
+          <div class="col-6 col-md-4 col-lg">
+            <a href="shop.html?cat=women" class="ws-category-card">
+              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=400&q=80"
+                alt="Women's Rose Gold Watch" class="ws-category-img img-fluid">
+              <div>
+                <h6>Women's Watches</h6>
+                <span class="arrow-icon"><i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- 3. Smart Watches (Touchscreen Smartwatch) -->
+          <div class="col-6 col-md-4 col-lg">
+            <a href="shop.html?movement=Smart" class="ws-category-card">
+              <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=400&q=80"
+                alt="Smartwatch" class="ws-category-img img-fluid">
+              <div>
+                <h6>Smart Watches</h6>
+                <span class="arrow-icon"><i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- 4. Automatic Watches (Mechanical Skeleton Timepiece) -->
+          <div class="col-6 col-md-4 col-lg">
+            <a href="shop.html?movement=Automatic" class="ws-category-card">
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80"
+                alt="Automatic Watch" class="ws-category-img img-fluid">
+              <div>
+                <h6>Automatic Watches</h6>
+                <span class="arrow-icon"><i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- 5. Luxury Brands (Gold Watch) -->
+          <div class="col-6 col-md-4 col-lg">
+            <a href="shop.html?collection=luxury" class="ws-category-card">
+              <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=400&q=80"
+                alt="Luxury Gold Watch" class="ws-category-img img-fluid">
+              <div>
+                <h6>Luxury Brands</h6>
+                <span class="arrow-icon"><i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. SPLIT PROMOTIONAL BANNERS (Wristwatches Only)
+         ========================================================================== -->
+    <section class="py-4" id="specialDeals">
+      <div class="container-fluid px-lg-5">
+        <div class="row g-4">
+
+          <!-- Banner 1: Up to 40% Off Luxury Watches (Dark) -->
+          <div class="col-md-6">
+            <div class="ws-banner-dark">
+              <span class="text-uppercase small fw-bold" style="color: var(--ws-gold-tan);">Up to 40% Off</span>
+              <h3 class="fw-bold my-2 fs-2">Luxury Watches</h3>
+              <p class="small text-muted mb-4">Top Brands | Starting from 650 EGP</p>
+
+              <a href="shop.html" class="btn-ws-gold btn-sm px-4 py-2">
+                Shop Now <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+
+              <img src="https://images.unsplash.com/photo-1547996160-71dfabb1a7b1?auto=format&fit=crop&w=600&q=80"
+                alt="Steel Dive Watch" class="ws-banner-img img-fluid d-none d-sm-block">
+            </div>
+          </div>
+
+          <!-- Banner 2: Elegant Women's Watches (Warm Beige) -->
+          <div class="col-md-6">
+            <div class="ws-banner-beige">
+              <span class="text-uppercase small fw-bold text-muted">Elegant</span>
+              <h3 class="fw-bold my-2 fs-2 text-dark">Women's Watches</h3>
+              <p class="small text-muted mb-4">Style in Every Second | From 850 EGP</p>
+
+              <a href="shop.html?cat=women" class="btn-ws-gold btn-sm px-4 py-2">
+                Shop Now <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+
+              <img src="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?auto=format&fit=crop&w=600&q=80"
+                alt="Women's Dress Watch" class="ws-banner-img img-fluid d-none d-sm-block">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. FEATURED COLLECTIONS (Strictly Wristwatches)
+         ========================================================================== -->
+    <section class="py-5" style="background-color: #ffffff;">
+      <div class="container-fluid px-lg-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3 class="fw-bold fs-4 mb-0 text-dark">Featured Collections</h3>
+          <a href="shop.html" class="text-decoration-none fw-semibold small" style="color: var(--ws-nav-green);">
+            View All <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-3">
+          <!-- Classic: Integrated Steel Watch -->
+          <div class="col-6 col-md-3">
+            <a href="shop.html" class="ws-collection-box">
+              <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=400&q=80"
+                alt="Classic Steel Watch" class="ws-collection-img img-fluid">
+              <h5>Classic</h5>
+              <p>Timeless Elegance</p>
+            </a>
+          </div>
+
+          <!-- Sport: Black Tactical G-Shock Style Watch -->
+          <div class="col-6 col-md-3">
+            <a href="shop.html" class="ws-collection-box">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80"
+                alt="Sport Tactical Watch" class="ws-collection-img img-fluid">
+              <h5>Sport</h5>
+              <p>Built for Adventure</p>
+            </a>
+          </div>
+
+          <!-- Luxury: Gold Presidential Watch -->
+          <div class="col-6 col-md-3">
+            <a href="shop.html" class="ws-collection-box">
+              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=400&q=80"
+                alt="Luxury Gold Watch" class="ws-collection-img img-fluid">
+              <h5>Luxury</h5>
+              <p>For the Elite</p>
+            </a>
+          </div>
+
+          <!-- Smart: Modern Connected Smartwatch -->
+          <div class="col-6 col-md-3">
+            <a href="shop.html" class="ws-collection-box">
+              <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=400&q=80"
+                alt="Connected Smartwatch" class="ws-collection-img img-fluid">
+              <h5>Smart</h5>
+              <p>Stay Connected</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. LIMITED TIME OFFER BANNER (Watch Spotlight)
+         ========================================================================== -->
+    <section class="py-3">
+      <div class="container-fluid px-lg-5">
+        <div class="ws-banner-beige p-4 p-md-5">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <span class="text-uppercase small fw-bold text-muted">Limited Time Offer</span>
+              <h3 class="fw-bold my-2 display-6 text-dark">Save Up to 50%</h3>
+              <p class="text-muted mb-4">On selected automatic and diver models. Starting from 650 EGP!</p>
+              <a href="shop.html" class="btn-ws-gold">
+                Shop Deals <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+            <div class="col-md-5 text-center mt-3 mt-md-0">
+              <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=600&q=80"
+                alt="Seamaster Blue Dial Diver Watch" class="img-fluid" style="max-height: 220px; object-fit: contain;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. BEST SELLERS (5 Wristwatch Cards in EGP)
+         ========================================================================== -->
+    <section class="py-5">
+      <div class="container-fluid px-lg-5">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <h3 class="fw-bold fs-4 mb-1 text-dark">Best Sellers</h3>
+            <p class="text-muted small mb-0">Most loved wristwatches, handpicked for you.</p>
+          </div>
+          <a href="shop.html" class="text-decoration-none fw-semibold small" style="color: var(--ws-nav-green);">
+            View All <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-3" id="homeBestSellersGrid">
+          <!-- Rendered dynamically: Seiko (2,850 EGP), Tissot (3,400 EGP), G-Shock (650 EGP), Michael Kors (1,750 EGP), Omega (4,900 EGP) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. LATEST ARRIVALS (4 Wristwatch Cards in EGP)
+         ========================================================================== -->
+    <section class="py-5" style="background-color: #ffffff;">
+      <div class="container-fluid px-lg-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3 class="fw-bold fs-4 mb-0 text-dark">Latest Arrivals</h3>
+          <a href="shop.html?sort=newest" class="text-decoration-none fw-semibold small"
+            style="color: var(--ws-nav-green);">
+            View All <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-3" id="homeLatestArrivalsGrid">
+          <!-- Rendered dynamically: Fossil Grant (1,250 EGP), Citizen (2,200 EGP), Daniel Wellington (850 EGP), Galaxy Watch (3,950 EGP) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. WHAT OUR CUSTOMERS SAY (Testimonials)
+         ========================================================================== -->
+    <section class="py-5" style="background-color: #f7faf9;">
+      <div class="container-fluid px-lg-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h3 class="fw-bold fs-4 mb-1 text-dark">What Our Customers Say</h3>
+            <p class="text-muted small mb-0">Real stories from real watch lovers.</p>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 34px; height: 34px;"><i
+                class="bi bi-chevron-left"></i></button>
+            <button class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 34px; height: 34px;"><i
+                class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="ws-testimonial-card shadow-sm">
+              <div class="text-warning small mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="small text-muted mb-4" style="line-height: 1.7;">
+                "Amazing quality and fast delivery! The Rolex Datejust 41 green dial is even more beautiful in person.
+                Highly recommend WatchShop service!"
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center me-3"
+                  style="width: 40px; height: 40px; font-weight: 700;">
+                  JC
+                </div>
+                <div>
+                  <h6 class="mb-0 fw-bold fs-6">James Carter</h6>
+                  <small class="text-muted" style="font-size: 0.75rem;">Verified Buyer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="ws-testimonial-card shadow-sm">
+              <div class="text-warning small mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="small text-muted mb-4" style="line-height: 1.7;">
+                "Authentic watches and excellent customer service. I've bought 2 watches already and every time it's
+                been perfect!"
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center me-3"
+                  style="width: 40px; height: 40px; font-weight: 700;">
+                  ER
+                </div>
+                <div>
+                  <h6 class="mb-0 fw-bold fs-6">Emily Roberts</h6>
+                  <small class="text-muted" style="font-size: 0.75rem;">Verified Purchase</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="ws-testimonial-card shadow-sm">
+              <div class="text-warning small mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="small text-muted mb-4" style="line-height: 1.7;">
+                "Ordered the G-Shock for 650 EGP. The WhatsApp order confirmation and courier inspection were fast and
+                reassuring. Will definitely shop again!"
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center me-3"
+                  style="width: 40px; height: 40px; font-weight: 700;">
+                  AK
+                </div>
+                <div>
+                  <h6 class="mb-0 fw-bold fs-6">Ahmed Khan</h6>
+                  <small class="text-muted" style="font-size: 0.75rem;">Cairo, Egypt</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. TOP BRANDS LOGO STRIP
+         ========================================================================== -->
+    <section class="ws-brand-strip">
+      <div class="container-fluid px-lg-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h4 class="fw-bold fs-5 mb-0 text-dark">Top Brands</h4>
+          <a href="shop.html" class="text-decoration-none fw-semibold small" style="color: var(--ws-nav-green);">
+            View All Brands <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+        <p class="text-muted small mb-4">World's most trusted watch brands, all in one place.</p>
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-4 text-center">
+          <span class="ws-brand-logo-text">ROLEX</span>
+          <span class="ws-brand-logo-text">OMEGA</span>
+          <span class="ws-brand-logo-text">SEIKO</span>
+          <span class="ws-brand-logo-text">TISSOT</span>
+          <span class="ws-brand-logo-text">CASIO</span>
+          <span class="ws-brand-logo-text">MICHAEL KORS</span>
+          <span class="ws-brand-logo-text">CITIZEN</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. JOIN OUR NEWSLETTER (Wristwatch Spotlight Only)
+         ========================================================================== -->
+    <section class="py-5">
+      <div class="container-fluid px-lg-5">
+        <div class="ws-newsletter-box">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <span class="text-uppercase small fw-bold" style="color: var(--ws-gold-tan);">DON'T MISS OUT</span>
+              <h3 class="fw-bold fs-2 my-2 text-white">Join Our Newsletter</h3>
+              <p class="text-muted small mb-4">Get exclusive offers, new watch arrivals and special discounts straight
+                to your inbox.</p>
+
+              <form class="d-flex gap-2 max-w-500">
+                <input type="email" class="form-control rounded-pill px-3 py-2 bg-white text-dark border-0"
+                  placeholder="Enter your email address" required>
+                <button type="submit" class="btn-ws-gold text-nowrap py-2 px-4">Subscribe</button>
+              </form>
+            </div>
+            <div class="col-md-5 text-center mt-4 mt-md-0 d-none d-md-block">
+              <!-- Wristwatch on wrist image only -->
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80"
+                alt="Luxury Wristwatch" class="img-fluid rounded-4 shadow-lg"
+                style="max-height: 220px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       13. DARK FOOTER
+       ========================================================================== -->
+  <footer class="ws-footer" id="contactSection">
+    <div class="container-fluid px-lg-5">
+      <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
+        <div class="col-md-4">
+          <a class="ws-brand-logo text-white mb-3" href="index.html">
+            <i class="bi bi-watch fs-3 me-2" style="color: var(--ws-gold-tan);"></i>
+            <span>Watch<span style="color: var(--ws-gold-tan);">Shop</span><span class="text-muted"
+                style="font-size: 0.85rem;">.com</span></span>
+          </a>
+          <p class="text-muted small" style="line-height: 1.8;">
+            More Than Just Time. Your premier destination for authentic luxury wristwatches, sport chronographs, and
+            certified timepieces across Egypt.
+          </p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-muted"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="#" class="text-muted"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="text-muted"><i class="bi bi-twitter-x fs-5"></i></a>
+            <a href="https://wa.me/201006845910" target="_blank" rel="noopener noreferrer" class="text-success"><i
+                class="bi bi-whatsapp fs-5"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <div class="ws-footer-title">Quick Links</div>
+          <a href="index.html" class="ws-footer-link">Home</a>
+          <a href="shop.html" class="ws-footer-link">Shop All</a>
+          <a href="shop.html?cat=men" class="ws-footer-link">Men's Watches</a>
+          <a href="shop.html?cat=women" class="ws-footer-link">Women's Watches</a>
+          <a href="#specialDeals" class="ws-footer-link">Deals</a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="ws-footer-title">Customer Service</div>
+          <a href="#" class="ws-footer-link">Shipping Across Egypt</a>
+          <a href="#" class="ws-footer-link">Returns & 14-Day Exchanges</a>
+          <a href="#" class="ws-footer-link">Authenticity Guarantee</a>
+          <a href="#" class="ws-footer-link">Warranty Details</a>
+        </div>
+
+        <div class="col-md-3">
+          <div class="ws-footer-title">Get In Touch</div>
+          <p class="mb-2"><i class="bi bi-envelope text-warning me-2"></i> support@watchshop.com</p>
+          <p class="mb-2"><i class="bi bi-telephone text-warning me-2"></i> +20 100 684 5910</p>
+          <p class="mb-3"><i class="bi bi-whatsapp text-success me-2"></i> Direct Concierge: 01006845910</p>
+          <p class="small text-muted">7 Days a Week: 9:00 AM – 11:00 PM</p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 text-muted small">
+        <p class="mb-2 mb-md-0">© 2026 WatchShop.com / VÉLOR Haute Horlogerie. All rights reserved.</p>
+        <div class="d-flex align-items-center gap-3">
+          <span class="badge bg-secondary bg-opacity-25 text-white">Cash on Delivery</span>
+          <span class="badge bg-secondary bg-opacity-25 text-white">POS Terminal</span>
+          <span class="badge bg-secondary bg-opacity-25 text-white">Visa</span>
+          <span class="badge bg-secondary bg-opacity-25 text-white">Mastercard</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

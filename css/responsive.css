@@ -1,0 +1,187 @@
+/* ==========================================================================
+   VÉLOR — Luxury Watch E-Commerce
+   Responsive & RTL Adaptation Stylesheet
+   ========================================================================== */
+
+/* Tablet & Mobile Adjustments */
+@media (max-width: 991.98px) {
+  .velor-navbar {
+    padding: 0.75rem 0;
+  }
+
+  .velor-navbar .navbar-collapse {
+    background-color: rgba(7, 24, 21, 0.98);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border: 1px solid var(--velor-champagne-border);
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .velor-nav-link {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(244, 240, 230, 0.08);
+  }
+
+  .velor-nav-link::after {
+    display: none;
+  }
+
+  .velor-hero-cinematic-wrapper {
+    min-height: auto;
+    padding: 5rem 0 3rem;
+  }
+
+  .velor-hero-watch-stage {
+    min-height: 400px;
+  }
+
+  .ring-outer {
+    width: 320px;
+    height: 320px;
+  }
+
+  .ring-inner {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-watch-main-img {
+    max-height: 400px;
+  }
+
+  /* Mobile Filter Offcanvas / Drawer */
+  .velor-filter-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    max-width: 85vw;
+    height: 100vh;
+    background-color: var(--velor-dark-emerald);
+    z-index: 1060;
+    overflow-y: auto;
+    padding: 1.5rem;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.7);
+    transform: translateX(-100%);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html[dir="rtl"] .velor-filter-sidebar {
+    left: auto;
+    right: 0;
+    transform: translateX(100%);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.7);
+  }
+
+  .velor-filter-sidebar.show {
+    transform: translateX(0);
+  }
+
+  .velor-filter-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1055;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .velor-filter-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html {
+    font-size: 15px;
+  }
+
+  .velor-hero-cinematic-wrapper {
+    padding: 4rem 0 2rem;
+  }
+
+  .hero-watch-main-img {
+    max-height: 320px;
+  }
+
+  .velor-hero-watch-stage {
+    min-height: 320px;
+  }
+
+  .ring-outer {
+    width: 260px;
+    height: 260px;
+  }
+
+  .ring-inner {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn-skip-intro {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .velor-card-img-wrap {
+    min-height: 200px;
+  }
+
+  .velor-card-img {
+    max-height: 180px;
+  }
+
+  /* Cart table mobile stacking */
+  .velor-cart-item {
+    padding: 1rem !important;
+  }
+}
+
+/* ==========================================================================
+   RTL Specific Mirroring Rules
+   ========================================================================== */
+html[dir="rtl"] .me-1 { margin-left: 0.25rem !important; margin-right: 0 !important; }
+html[dir="rtl"] .me-2 { margin-left: 0.5rem !important; margin-right: 0 !important; }
+html[dir="rtl"] .me-3 { margin-left: 1rem !important; margin-right: 0 !important; }
+html[dir="rtl"] .ms-1 { margin-right: 0.25rem !important; margin-left: 0 !important; }
+html[dir="rtl"] .ms-2 { margin-right: 0.5rem !important; margin-left: 0 !important; }
+html[dir="rtl"] .ms-3 { margin-right: 1rem !important; margin-left: 0 !important; }
+
+html[dir="rtl"] .pe-1 { padding-left: 0.25rem !important; padding-right: 0 !important; }
+html[dir="rtl"] .pe-2 { padding-left: 0.5rem !important; padding-right: 0 !important; }
+html[dir="rtl"] .pe-3 { padding-left: 1rem !important; padding-right: 0 !important; }
+html[dir="rtl"] .ps-1 { padding-right: 0.25rem !important; padding-left: 0 !important; }
+html[dir="rtl"] .ps-2 { padding-right: 0.5rem !important; padding-left: 0 !important; }
+html[dir="rtl"] .ps-3 { padding-right: 1rem !important; padding-left: 0 !important; }
+
+html[dir="rtl"] .bi-arrow-right::before {
+  content: "\f12f"; /* Arrow Left */
+}
+
+html[dir="rtl"] .bi-arrow-left::before {
+  content: "\f138"; /* Arrow Right */
+}
+
+html[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+html[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .dropdown-menu {
+  text-align: right;
+}
+
+html[dir="rtl"] .modal-header .btn-close {
+  margin: -0.5rem auto -0.5rem -0.5rem;
+}
+

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <defs>
+    <linearGradient id="velorGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F0E6"/>
+      <stop offset="50%" stop-color="#D6CFBE"/>
+      <stop offset="100%" stop-color="#C0C5C7"/>
+    </linearGradient>
+    <linearGradient id="limeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C6F126" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#195347" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Emblem: Precision Tourbillon / Meridian Monogram -->
+  <g transform="translate(40, 60)">
+    <!-- Outer concentric ring -->
+    <circle r="36" stroke="url(#velorGold)" stroke-width="1.2" stroke-opacity="0.6" stroke-dasharray="3 3"/>
+    <circle r="30" stroke="#F4F0E6" stroke-width="1.8" stroke-opacity="0.85"/>
+    <circle r="22" stroke="url(#limeGlow)" stroke-width="1" stroke-opacity="0.7"/>
+    <!-- Four quadrant precision markers -->
+    <line x1="0" y1="-38" x2="0" y2="-26" stroke="#C6F126" stroke-width="2"/>
+    <line x1="0" y1="26" x2="0" y2="38" stroke="#F4F0E6" stroke-width="1.5"/>
+    <line x1="-38" y1="0" x2="-26" y2="0" stroke="#F4F0E6" stroke-width="1.5"/>
+    <line x1="26" y1="0" x2="38" y2="0" stroke="#F4F0E6" stroke-width="1.5"/>
+    <!-- Central stylized V monogram -->
+    <path d="M-10 -12 L0 10 L10 -12" stroke="url(#velorGold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="1" r="2" fill="#C6F126"/>
+  </g>
+
+  <!-- Typography: VÉLOR -->
+  <text x="100" y="72" font-family="'Cinzel', 'Playfair Display', 'Times New Roman', serif" font-size="44" font-weight="700" letter-spacing="14" fill="url(#velorGold)">
+    VÉLOR
+  </text>
+  
+  <!-- Subtitle: HAUTE HORLOGERIE -->
+  <text x="104" y="94" font-family="'Plus Jakarta Sans', 'Montserrat', sans-serif" font-size="9" font-weight="500" letter-spacing="7" fill="#C6F126" opacity="0.9">
+    HAUTE HORLOGERIE • GENÈVE
+  </text>
+</svg>

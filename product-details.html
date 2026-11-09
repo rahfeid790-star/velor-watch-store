@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timepiece Details — VÉLOR Haute Horlogerie</title>
+  <meta name="description" content="Explore technical specifications, manufacture calibres, and bespoke strap configurations for VÉLOR luxury timepieces.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/velor-logo.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="velor-announcement-bar py-2" aria-label="Store Announcement">
+    <div class="container-fluid px-lg-5">
+      <div class="row align-items-center">
+        <div class="col-md-8 text-center text-md-start mb-1 mb-md-0">
+          <i class="bi bi-shield-lock-fill text-velor-lime me-2"></i>
+          <span data-i18n="announcementText">Insured White-Glove Delivery Across Egypt & Worldwide • Demo Luxury Experience</span>
+        </div>
+        <div class="col-md-4 text-center text-md-end d-flex justify-content-center justify-content-md-end align-items-center gap-3">
+          <a href="https://wa.me/201006845910" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-velor-champagne small hover-lime">
+            <i class="bi bi-whatsapp text-velor-lime me-1"></i> <span data-i18n="conciergeWhatsApp">Concierge: +20 100 684 5910</span>
+          </a>
+          <button type="button" class="btn btn-sm btn-outline-velor-gold velor-lang-toggle py-0 px-2 small font-heading">
+            العربية
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg velor-navbar sticky-top py-3" aria-label="Main Navigation">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand velor-brand-logo me-4" href="index.html">
+          <img src="assets/images/velor-logo.svg" alt="VÉLOR Logo">
+        </a>
+
+        <button class="navbar-toggler border-0 text-velor-champagne" type="button" data-bs-toggle="collapse" data-bs-target="#velorNavbarPdp" aria-controls="velorNavbarPdp" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="velorNavbarPdp">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link velor-nav-link" href="index.html" data-i18n="navHome">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link velor-nav-link active" href="shop.html" data-i18n="navShop">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link velor-nav-link" href="shop.html?collection=emerald" data-i18n="navCollections">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link velor-nav-link" href="shop.html?sort=rating" data-i18n="navBestSellers">Best Sellers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link velor-nav-link" href="shop.html?sort=newest" data-i18n="navNewArrivals">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link velor-nav-link" href="index.html#exclusiveOffers" data-i18n="navOffers">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link velor-nav-link" href="index.html#brandStory" data-i18n="navAbout">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link velor-nav-link" href="index.html#faqSection" data-i18n="navContact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <button class="nav-icon-btn" data-bs-toggle="modal" data-bs-target="#globalSearchModal" title="Search Timepieces" aria-label="Search">
+              <i class="bi bi-search fs-5"></i>
+            </button>
+            <a href="wishlist.html" class="nav-icon-btn position-relative" title="View Wishlist" aria-label="Wishlist">
+              <i class="bi bi-heart fs-5"></i>
+              <span class="badge-counter velor-wishlist-count" style="display: none;">0</span>
+            </a>
+            <a href="cart.html" class="nav-icon-btn position-relative" title="View Selection" aria-label="Shopping Cart">
+              <i class="bi bi-bag fs-5"></i>
+              <span class="badge-counter velor-cart-count" style="display: none;">0</span>
+            </a>
+            <button class="btn btn-sm btn-outline-velor-gold velor-lang-toggle px-3 ms-2 d-none d-lg-inline-block font-heading">
+              العربية
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Global Search Modal -->
+  <div class="modal fade" id="globalSearchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-velor-card text-velor-ivory border-velor-gold">
+        <div class="modal-header border-velor-subtle pb-2">
+          <div class="input-group">
+            <span class="input-group-text bg-transparent border-0 text-velor-lime ps-0">
+              <i class="bi bi-search fs-5"></i>
+            </span>
+            <input type="text" id="globalSearchInput" class="form-control bg-transparent border-0 text-velor-ivory fs-5" placeholder="Search watches by name, collection, or reference..." data-i18n-placeholder="navSearch">
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4" id="globalSearchResults" style="max-height: 400px; overflow-y: auto;">
+          <p class="text-muted text-center py-4 mb-0">Type a timepiece name or collection to search...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Breadcrumb Bar -->
+    <div class="py-3 bg-velor-dark border-bottom border-velor-subtle">
+      <div class="container-fluid px-lg-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb small mb-0">
+            <li class="breadcrumb-item"><a href="index.html" class="text-muted text-decoration-none hover-lime">Home</a></li>
+            <li class="breadcrumb-item"><a href="shop.html" class="text-muted text-decoration-none hover-lime">Shop</a></li>
+            <li class="breadcrumb-item active text-velor-lime" id="productBreadcrumbCurrent" aria-current="page">Timepiece</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Product Presentation Viewport -->
+    <section class="py-5 bg-velor-dark">
+      <div class="container-fluid px-lg-5">
+        <div id="productDetailsMain">
+          <!-- Rendered dynamically by main.js with Gallery, Straps, Specs, and Actions -->
+          <div class="text-center py-5">
+            <div class="spinner-border text-velor-lime" role="status"></div>
+            <p class="text-muted mt-2">Loading timepiece dossier...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications & Client Care Policies Tabs -->
+    <section class="py-5 bg-velor-surface border-top border-bottom border-velor-subtle">
+      <div class="container-fluid px-lg-5">
+        <div class="row g-5">
+          <!-- Specifications Column -->
+          <div class="col-lg-7">
+            <div class="card p-4 p-md-5 border-0 bg-velor-card text-velor-ivory shadow-lg">
+              <h3 class="font-heading mb-4 pb-2 border-bottom border-velor-subtle" data-i18n="specsTitle">
+                Technical Specifications
+              </h3>
+              <div id="pdpSpecsContainer">
+                <!-- Loaded via JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- White-Glove Care & Inspection Policy Column -->
+          <div class="col-lg-5">
+            <div class="card p-4 p-md-5 border-0 bg-velor-card text-velor-ivory shadow-lg mb-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="bi bi-shield-check text-velor-lime fs-3 me-3"></i>
+                <h5 class="font-heading mb-0" data-i18n="shippingPolicyTitle">White-Glove Shipping & Delivery</h5>
+              </div>
+              <p class="text-muted small mb-0" style="line-height: 1.8;" data-i18n="shippingPolicyDesc">
+                Every VÉLOR timepiece is transported via an armored, fully-insured luxury courier service. In Greater Cairo and Alexandria, delivery is completed within 24 to 48 hours with option to inspect prior to completing cash on delivery.
+              </p>
+            </div>
+
+            <div class="card p-4 p-md-5 border-0 bg-velor-card text-velor-ivory shadow-lg">
+              <div class="d-flex align-items-center mb-3">
+                <i class="bi bi-arrow-repeat text-velor-lime fs-3 me-3"></i>
+                <h5 class="font-heading mb-0" data-i18n="returnPolicyTitle">14-Day Complimentary Inspection</h5>
+              </div>
+              <p class="text-muted small mb-0" style="line-height: 1.8;" data-i18n="returnPolicyDesc">
+                Clients may exchange or return unworn timepieces in their original sealed state within 14 days of receipt. Our concierge team handles collection directly at your residence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Collector Reviews Section -->
+    <section class="py-5 bg-velor-dark">
+      <div class="container-fluid px-lg-5 py-3">
+        <div class="row g-5">
+          <!-- Reviews List -->
+          <div class="col-lg-7">
+            <h3 class="font-heading mb-4 pb-2 border-bottom border-velor-subtle text-velor-ivory" data-i18n="reviewsSectionTitle">
+              Collector Impressions & Reviews (Demo)
+            </h3>
+            <div id="pdpReviewsList">
+              <!-- Loaded via JS -->
+            </div>
+          </div>
+
+          <!-- Write a Review Form -->
+          <div class="col-lg-5">
+            <div class="card p-4 p-md-5 border-0 bg-velor-card text-velor-ivory shadow-lg sticky-top" style="top: 100px;">
+              <h4 class="font-heading mb-3 pb-2 border-bottom border-velor-subtle" data-i18n="writeReview">
+                Write a Review
+              </h4>
+              <form id="velorNewReviewForm">
+                <div class="mb-3">
+                  <label class="form-label small text-muted text-uppercase letter-spacing-1 font-numeric">Your Name</label>
+                  <input type="text" id="newReviewAuthor" class="form-control bg-velor-surface text-velor-ivory border-velor-subtle" placeholder="e.g. Omar Helmy" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-muted text-uppercase letter-spacing-1 font-numeric">Rating</label>
+                  <select id="newReviewRating" class="form-select bg-velor-surface text-velor-ivory border-velor-subtle">
+                    <option value="5">★★★★★ (5/5 Exceptional)</option>
+                    <option value="4">★★★★☆ (4/5 Excellent)</option>
+                    <option value="3">★★★☆☆ (3/5 Good)</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-muted text-uppercase letter-spacing-1 font-numeric">Headline</label>
+                  <input type="text" id="newReviewTitle" class="form-control bg-velor-surface text-velor-ivory border-velor-subtle" placeholder="e.g. Masterful finishing and balance" required>
+                </div>
+                <div class="mb-4">
+                  <label class="form-label small text-muted text-uppercase letter-spacing-1 font-numeric">Your Thoughts</label>
+                  <textarea id="newReviewComment" class="form-control bg-velor-surface text-velor-ivory border-velor-subtle" rows="4" placeholder="Detail your impression of the dial, case bevels, or timekeeping accuracy..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-velor-primary w-100 py-3 text-uppercase letter-spacing-1">
+                  Submit Collector Review
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Related Timepieces -->
+    <section class="py-5 bg-velor-surface border-top border-velor-subtle">
+      <div class="container-fluid px-lg-5 py-4">
+        <h3 class="font-heading display-6 mb-4 text-velor-ivory" data-i18n="relatedTitle">
+          Complementary Creations
+        </h3>
+        <div class="row g-4" id="pdpRelatedGrid">
+          <!-- Loaded via JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="velor-footer">
+    <div class="container-fluid px-lg-5">
+      <div class="row g-5 mb-5">
+        <div class="col-lg-4">
+          <a href="index.html" class="d-inline-block mb-3">
+            <img src="assets/images/velor-logo.svg" alt="VÉLOR Logo" style="height: 42px;">
+          </a>
+          <p class="text-muted small mb-4" style="line-height: 1.8;" data-i18n="footerBrandDesc">
+            VÉLOR represents an avant-garde synthesis of haute horlogerie craftsmanship and contemporary artistic direction. Designed for connoisseurs of distinction.
+          </p>
+          <a href="https://wa.me/201006845910" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-velor-gold text-velor-lime">
+            <i class="bi bi-whatsapp me-1"></i> WhatsApp: 01006845910
+          </a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="font-heading text-velor-ivory mb-3 text-uppercase letter-spacing-1" data-i18n="footerNavTitle">The Atelier</h6>
+          <a href="shop.html" class="velor-footer-link" data-i18n="navShop">All Timepieces</a>
+          <a href="shop.html?cat=men" class="velor-footer-link" data-i18n="filterMen">Men's Watches</a>
+          <a href="shop.html?cat=women" class="velor-footer-link" data-i18n="filterWomen">Women's Watches</a>
+          <a href="shop.html?sort=newest" class="velor-footer-link" data-i18n="navNewArrivals">New Arrivals</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="font-heading text-velor-ivory mb-3 text-uppercase letter-spacing-1" data-i18n="footerCollectionsTitle">Collections</h6>
+          <a href="shop.html?collection=emerald" class="velor-footer-link" data-i18n="colEmeraldTitle">Emerald Nocturne</a>
+          <a href="shop.html?collection=aubergine" class="velor-footer-link" data-i18n="colPlumTitle">Aubergine Royale</a>
+          <a href="shop.html?collection=argent" class="velor-footer-link" data-i18n="colArgentTitle">Argent Chrono</a>
+          <a href="shop.html?collection=lavenir" class="velor-footer-link" data-i18n="colLavenirTitle">L’Avenir Concept</a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h6 class="font-heading text-velor-ivory mb-3 text-uppercase letter-spacing-1" data-i18n="footerClientCareTitle">Client Concierge</h6>
+          <p class="text-muted small mb-2"><i class="bi bi-geo-alt text-velor-lime me-2"></i> Greater Cairo & Alexandria Atelier Delivery</p>
+          <p class="text-muted small mb-2"><i class="bi bi-telephone text-velor-lime me-2"></i> Tel: 01006845910 (WhatsApp: +20 100 684 5910)</p>
+          <div class="p-3 bg-velor-card rounded border border-velor-subtle mt-3">
+            <h6 class="font-heading small mb-1 text-velor-champagne" data-i18n="footerLegalTitle">Legal & Demo Disclosures</h6>
+            <p class="text-muted small mb-0" style="font-size: 0.73rem;" data-i18n="footerDemoNotice">
+              VÉLOR is a luxury watch brand concept created for portfolio presentation. All products, prices in EGP, specifications, and collector reviews are demonstration data.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-4 border-top border-velor-subtle d-flex flex-column flex-md-row justify-content-between align-items-center text-muted small">
+        <p class="mb-2 mb-md-0" data-i18n="footerCopyright">© 2026 VÉLOR Haute Horlogerie. All rights reserved.</p>
+        <button class="btn btn-link text-velor-lime p-0 text-decoration-none small velor-lang-toggle">العربية / English</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

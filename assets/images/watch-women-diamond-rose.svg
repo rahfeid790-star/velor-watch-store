@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Rose Gold Gradients -->
+    <linearGradient id="roseGoldCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE0D6"/>
+      <stop offset="35%" stop-color="#E8A896"/>
+      <stop offset="70%" stop-color="#C27A66"/>
+      <stop offset="100%" stop-color="#FCE1D8"/>
+    </linearGradient>
+
+    <linearGradient id="roseGoldStrap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B87360"/>
+      <stop offset="30%" stop-color="#F7D0C5"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#F2C2B5"/>
+      <stop offset="100%" stop-color="#A66453"/>
+    </linearGradient>
+
+    <!-- Mother of Pearl Shimmer Dial -->
+    <radialGradient id="mopDial" cx="45%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#FAF1ED"/>
+      <stop offset="75%" stop-color="#F3DFD8"/>
+      <stop offset="100%" stop-color="#E5C7BD"/>
+    </radialGradient>
+
+    <!-- Diamond Sparkle Filter -->
+    <filter id="diamondGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <!-- TOP ROSE GOLD BRACELET -->
+    <path d="M 210,40 L 290,40 L 280,160 L 220,160 Z" fill="url(#roseGoldStrap)" stroke="#A66453" stroke-width="1.2"/>
+    <line x1="213" y1="70" x2="287" y2="70" stroke="#A66453" stroke-width="1.5"/>
+    <line x1="216" y1="100" x2="284" y2="100" stroke="#A66453" stroke-width="1.5"/>
+    <line x1="218" y1="130" x2="282" y2="130" stroke="#A66453" stroke-width="1.5"/>
+    <!-- Center polished links highlight -->
+    <rect x="238" y="40" width="24" height="120" fill="#FFFFFF" opacity="0.3"/>
+
+    <!-- BOTTOM ROSE GOLD BRACELET -->
+    <path d="M 220,340 L 280,340 L 290,460 L 210,460 Z" fill="url(#roseGoldStrap)" stroke="#A66453" stroke-width="1.2"/>
+    <line x1="218" y1="370" x2="282" y2="370" stroke="#A66453" stroke-width="1.5"/>
+    <line x1="216" y1="400" x2="284" y2="400" stroke="#A66453" stroke-width="1.5"/>
+    <line x1="213" y1="430" x2="287" y2="430" stroke="#A66453" stroke-width="1.5"/>
+    <rect x="238" y="340" width="24" height="120" fill="#FFFFFF" opacity="0.3"/>
+
+    <!-- CASE LUGS -->
+    <polygon points="195,150 230,140 215,200 185,190" fill="url(#roseGoldCase)"/>
+    <polygon points="305,150 270,140 285,200 315,190" fill="url(#roseGoldCase)"/>
+    <polygon points="195,350 230,360 215,300 185,310" fill="url(#roseGoldCase)"/>
+    <polygon points="305,350 270,360 285,300 315,310" fill="url(#roseGoldCase)"/>
+
+    <!-- FLUTED ROSE GOLD CROWN -->
+    <polygon points="368,238 380,240 380,260 368,262" fill="url(#roseGoldCase)" stroke="#8A4E3F" stroke-width="0.8"/>
+    <circle cx="380" cy="250" r="2.5" fill="#FFFFFF" filter="url(#diamondGlow)"/>
+
+    <!-- 36mm CASE BODY -->
+    <circle cx="250" cy="250" r="122" fill="url(#roseGoldCase)" stroke="#A66453" stroke-width="1.5"/>
+    <circle cx="250" cy="250" r="114" fill="#3A1C16"/>
+
+    <!-- DIAMOND PAVÉ BEZEL (48 Brilliant Cut Diamonds) -->
+    <circle cx="250" cy="250" r="110" fill="#E8B0A2"/>
+    <g fill="#FFFFFF" stroke="#C28678" stroke-width="0.6" filter="url(#diamondGlow)">
+      <!-- 24 Circular Diamond Prongs around the bezel -->
+      <circle cx="250" cy="142" r="4"/><circle cx="278" cy="145" r="4"/><circle cx="305" cy="157" r="4"/>
+      <circle cx="327" cy="174" r="4"/><circle cx="344" cy="198" r="4"/><circle cx="354" cy="225" r="4"/>
+      <circle cx="358" cy="250" r="4"/><circle cx="354" cy="275" r="4"/><circle cx="344" cy="302" r="4"/>
+      <circle cx="327" cy="326" r="4"/><circle cx="305" cy="343" r="4"/><circle cx="278" cy="355" r="4"/>
+      <circle cx="250" cy="358" r="4"/><circle cx="222" cy="355" r="4"/><circle cx="195" cy="343" r="4"/>
+      <circle cx="173" cy="326" r="4"/><circle cx="156" cy="302" r="4"/><circle cx="146" cy="275" r="4"/>
+      <circle cx="142" cy="250" r="4"/><circle cx="146" cy="225" r="4"/><circle cx="156" cy="198" r="4"/>
+      <circle cx="173" cy="174" r="4"/><circle cx="195" cy="157" r="4"/><circle cx="222" cy="145" r="4"/>
+    </g>
+
+    <!-- INNER ROSE GOLD FLANGE -->
+    <circle cx="250" cy="250" r="100" fill="url(#roseGoldCase)"/>
+    <circle cx="250" cy="250" r="96" fill="#FCE9E2" stroke="#B87360" stroke-width="0.75"/>
+
+    <!-- MOTHER OF PEARL DIAL -->
+    <circle cx="250" cy="250" r="94" fill="url(#mopDial)"/>
+
+    <!-- Subtle Radial Guilloché -->
+    <g opacity="0.15" stroke="#9C5D4E" stroke-width="0.6">
+      <line x1="250" y1="250" x2="250" y2="158"/>
+      <line x1="250" y1="250" x2="315" y2="187"/>
+      <line x1="250" y1="250" x2="342" y2="250"/>
+      <line x1="250" y1="250" x2="315" y2="313"/>
+      <line x1="250" y1="250" x2="250" y2="342"/>
+      <line x1="250" y1="250" x2="185" y2="313"/>
+      <line x1="250" y1="250" x2="158" y2="250"/>
+      <line x1="250" y1="250" x2="185" y2="187"/>
+    </g>
+
+    <!-- 12 DIAMOND HOUR INDICES -->
+    <g fill="#FFFFFF" stroke="#C28678" stroke-width="0.8" filter="url(#diamondGlow)">
+      <circle cx="250" cy="168" r="3.5"/>
+      <circle cx="291" cy="179" r="3.2"/>
+      <circle cx="321" cy="209" r="3.2"/>
+      <circle cx="332" cy="250" r="3.5"/>
+      <circle cx="321" cy="291" r="3.2"/>
+      <circle cx="291" cy="321" r="3.2"/>
+      <circle cx="250" cy="332" r="3.5"/>
+      <circle cx="209" cy="321" r="3.2"/>
+      <circle cx="179" cy="291" r="3.2"/>
+      <circle cx="168" cy="250" r="3.5"/>
+      <circle cx="179" cy="209" r="3.2"/>
+      <circle cx="209" cy="179" r="3.2"/>
+    </g>
+
+    <!-- BRAND INSCRIPTION -->
+    <text x="250" y="205" font-family="'Cinzel', serif" font-size="10" font-weight="700" letter-spacing="3" fill="#8A4E3F" text-anchor="middle">VÉLOR</text>
+    <text x="250" y="215" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" font-weight="600" letter-spacing="1" fill="#A86E60" text-anchor="middle">DIAMOND EDITION</text>
+    <text x="250" y="295" font-family="'Plus Jakarta Sans', sans-serif" font-size="4.5" font-weight="500" letter-spacing="1" fill="#A86E60" text-anchor="middle">SWISS QUARTZ</text>
+
+    <!-- ROSE GOLD HANDS (10:10 Elegance) -->
+    <!-- Hour Hand -->
+    <g transform="translate(250, 250) rotate(305)">
+      <path d="M -2.5,8 L -1.8,-55 L 0,-64 L 1.8,-55 L 2.5,8 Z" fill="url(#roseGoldCase)" stroke="#8A4E3F" stroke-width="0.75"/>
+    </g>
+
+    <!-- Minute Hand -->
+    <g transform="translate(250, 250) rotate(60)">
+      <path d="M -2,10 L -1.5,-80 L 0,-88 L 1.5,-80 L 2,10 Z" fill="url(#roseGoldCase)" stroke="#8A4E3F" stroke-width="0.75"/>
+    </g>
+
+    <!-- Center Pinion -->
+    <circle cx="250" cy="250" r="5" fill="url(#roseGoldCase)" stroke="#8A4E3F" stroke-width="0.8"/>
+    <circle cx="250" cy="250" r="2" fill="#FFFFFF"/>
+
+    <!-- Fine Seconds Needle -->
+    <g transform="translate(250, 250) rotate(220)">
+      <line x1="0" y1="20" x2="0" y2="-92" stroke="#8A4E3F" stroke-width="0.9"/>
+      <circle cx="0" cy="0" r="1.5" fill="#8A4E3F"/>
+    </g>
+
+    <!-- SAPPHIRE SHINE REFLECTION -->
+    <path d="M 175,190 C 210,165 290,165 325,190 C 285,180 215,180 175,190 Z" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+</svg>

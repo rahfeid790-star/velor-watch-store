@@ -1,0 +1,717 @@
+/* ==========================================================================
+   VÉLOR & WATCHSHOP — Luxury Watch E-Commerce
+   Strictly Watch-Only UI with Dark Emerald Accents & Realistic Local Pricing
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --ws-dark-forest: #081d18;
+  --ws-nav-green: #0b2a22;
+  --ws-nav-green-light: #123d32;
+  --ws-gold-tan: #d4a762;
+  --ws-gold-tan-hover: #c49651;
+  --ws-gold-light: #f7eedf;
+  --ws-beige-bg: #efe8dd;
+  --ws-beige-card: #f9f6f0;
+
+  --ws-text-dark: #121816;
+  --ws-text-muted: #6c7873;
+  --ws-border-light: #e6eae8;
+  --ws-card-bg: #ffffff;
+  --ws-page-bg: #f8faf9;
+
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-arabic: 'Cairo', -apple-system, sans-serif;
+
+  --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--ws-page-bg);
+  color: var(--ws-text-dark);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+html[dir="rtl"] body, body.rtl-mode {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  text-align: right;
+}
+
+/* ==========================================================================
+   TOP UTILITY BAR
+   ========================================================================== */
+.ws-top-bar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--ws-border-light);
+  padding: 0.75rem 0;
+}
+
+.ws-brand-logo {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #111;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ws-search-wrap {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+}
+
+.ws-search-input {
+  background-color: #f4f6f5;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 0.6rem 1.2rem 0.6rem 2.8rem;
+  font-size: 0.9rem;
+  color: #333;
+  width: 100%;
+  transition: var(--transition-smooth);
+}
+
+html[dir="rtl"] .ws-search-input {
+  padding: 0.6rem 2.8rem 0.6rem 1.2rem;
+}
+
+.ws-search-input:focus {
+  background-color: #ffffff;
+  border-color: var(--ws-nav-green);
+  box-shadow: 0 0 0 3px rgba(11, 42, 34, 0.1);
+  outline: none;
+}
+
+.ws-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+html[dir="rtl"] .ws-search-icon {
+  left: auto;
+  right: 1rem;
+}
+
+.ws-action-icon {
+  color: #222;
+  font-size: 1.15rem;
+  position: relative;
+  text-decoration: none;
+  padding: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--transition-smooth);
+}
+
+.ws-action-icon:hover {
+  color: var(--ws-nav-green);
+}
+
+.ws-badge-count {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background-color: var(--ws-gold-tan);
+  color: #000;
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+.ws-nav-bar {
+  background-color: var(--ws-nav-green);
+  padding: 0.4rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ws-nav-link {
+  color: #e2ece7;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.5rem 1.1rem;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: var(--transition-smooth);
+  display: inline-block;
+}
+
+.ws-nav-link:hover {
+  color: #ffffff;
+}
+
+.ws-nav-link.active,
+.ws-nav-link-pill {
+  background-color: var(--ws-gold-tan);
+  color: #121816 !important;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+/* ==========================================================================
+   HERO SECTION & PROFESSIONAL HERO WATCH ANIMATIONS
+   ========================================================================== */
+.ws-hero-section {
+  background: radial-gradient(circle at 75% 50%, #153c32 0%, #0b241e 50%, #061814 100%);
+  color: #ffffff;
+  padding: 4.5rem 0 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ws-hero-subtitle {
+  color: var(--ws-gold-tan);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.ws-hero-title {
+  font-size: 3.25rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0.75rem 0 1rem;
+}
+
+.ws-hero-desc {
+  color: #b5c7c0;
+  font-size: 1.05rem;
+  max-width: 480px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.btn-ws-gold {
+  background-color: var(--ws-gold-tan);
+  color: #111816;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.8rem;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--transition-smooth);
+}
+
+.btn-ws-gold:hover {
+  background-color: var(--ws-gold-tan-hover);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 167, 98, 0.35);
+}
+
+.ws-hero-badges {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ws-badge-item {
+  color: #d1ded8;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ws-badge-item i {
+  color: var(--ws-gold-tan);
+  font-size: 1.1rem;
+}
+
+/* PROFESSIONAL HERO WATCH ENTRANCE & CONTINUOUS FLOATING EFFECT */
+@keyframes heroWatchEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(45px) scale(0.9) rotate(-3deg);
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.02) rotate(1deg);
+    filter: drop-shadow(0 32px 40px rgba(0, 0, 0, 0.8));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+    filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.75));
+  }
+}
+
+@keyframes heroWatchFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.75));
+  }
+  50% {
+    transform: translateY(-15px) rotate(1.2deg);
+    filter: drop-shadow(0 38px 45px rgba(0, 0, 0, 0.85));
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.75));
+  }
+}
+
+@keyframes floatBadgeEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(25px) scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.ws-hero-watch-wrap {
+  position: relative;
+  text-align: center;
+  perspective: 1000px;
+}
+
+.ws-hero-watch-img {
+  max-height: 480px;
+  width: auto;
+  animation: heroWatchEntrance 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+             heroWatchFloat 6s ease-in-out 1.4s infinite;
+  transform-origin: center center;
+  will-change: transform, filter;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.ws-hero-watch-wrap:hover .ws-hero-watch-img {
+  animation-play-state: paused;
+  transform: scale(1.05) translateY(-8px);
+  filter: drop-shadow(0 42px 50px rgba(11, 42, 34, 0.6));
+}
+
+.ws-floating-price-card {
+  position: absolute;
+  bottom: 22%;
+  right: 6%;
+  background-color: rgba(9, 28, 23, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 167, 98, 0.4);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  animation: floatBadgeEntrance 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.5s backwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 5;
+}
+
+html[dir="rtl"] .ws-floating-price-card {
+  right: auto;
+  left: 6%;
+}
+
+.ws-floating-price-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.7);
+}
+
+.ws-floating-price-card .brand-name {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: var(--ws-gold-tan);
+  font-weight: 700;
+}
+
+.ws-floating-price-card .model-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 2px 0;
+}
+
+.ws-floating-price-card .price-tag {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   CATEGORY CARDS (Strictly Watch Products)
+   ========================================================================== */
+.ws-category-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 1.5rem 1rem 1.25rem;
+  text-align: center;
+  border: 1px solid var(--ws-border-light);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  text-decoration: none;
+  color: var(--ws-text-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  transition: var(--transition-smooth);
+}
+
+.ws-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(11, 42, 34, 0.08);
+  border-color: var(--ws-gold-tan);
+  color: var(--ws-nav-green);
+}
+
+.ws-category-img {
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.ws-category-card:hover .ws-category-img {
+  transform: scale(1.08);
+}
+
+.ws-category-card h6 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.ws-category-card .arrow-icon {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* ==========================================================================
+   PROMOTIONAL SPLIT BANNERS (Wristwatches Only)
+   ========================================================================== */
+.ws-banner-dark {
+  background: linear-gradient(135deg, #111815 0%, #0d211b 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.ws-banner-beige {
+  background-color: var(--ws-beige-bg);
+  color: var(--ws-text-dark);
+  border-radius: 16px;
+  padding: 2.5rem;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.ws-banner-img {
+  max-height: 200px;
+  object-fit: contain;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+html[dir="rtl"] .ws-banner-img {
+  right: auto;
+  left: 1.5rem;
+}
+
+.ws-banner-dark:hover .ws-banner-img,
+.ws-banner-beige:hover .ws-banner-img {
+  transform: scale(1.06);
+}
+
+/* ==========================================================================
+   FEATURED COLLECTIONS (Wristwatches Only)
+   ========================================================================== */
+.ws-collection-box {
+  background-color: var(--ws-beige-card);
+  border: 1px solid rgba(212, 167, 98, 0.2);
+  border-radius: 14px;
+  padding: 1.75rem 1rem;
+  text-align: center;
+  transition: var(--transition-smooth);
+  text-decoration: none;
+  display: block;
+}
+
+.ws-collection-box:hover {
+  background-color: #ffffff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.ws-collection-img {
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.ws-collection-box:hover .ws-collection-img {
+  transform: scale(1.08);
+}
+
+.ws-collection-box h5 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ws-text-dark);
+  margin-bottom: 0.2rem;
+}
+
+.ws-collection-box p {
+  color: var(--ws-text-muted);
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   PRODUCT CARDS (Best Sellers & Latest Arrivals with EGP Pricing)
+   ========================================================================== */
+.ws-product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid var(--ws-border-light);
+  padding: 1.25rem;
+  position: relative;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ws-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  border-color: #d1ded8;
+}
+
+.ws-product-img-wrap {
+  text-align: center;
+  padding: 1rem 0;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ws-product-img {
+  max-height: 160px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.ws-product-card:hover .ws-product-img {
+  transform: scale(1.08);
+}
+
+.ws-wishlist-heart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+html[dir="rtl"] .ws-wishlist-heart {
+  right: auto;
+  left: 1rem;
+}
+
+.ws-wishlist-heart:hover,
+.ws-wishlist-heart.active {
+  color: #e63946;
+}
+
+.ws-product-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--ws-text-dark);
+  margin-bottom: 0.25rem;
+  text-decoration: none;
+  display: block;
+}
+
+.ws-product-title:hover {
+  color: var(--ws-nav-green);
+}
+
+.ws-product-cat {
+  font-size: 0.78rem;
+  color: var(--ws-text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.ws-product-price {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--ws-nav-green);
+  margin-bottom: 0.5rem;
+}
+
+.ws-btn-add-cart {
+  background-color: var(--ws-nav-green);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+  width: 100%;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.ws-btn-add-cart:hover {
+  background-color: var(--ws-nav-green-light);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   TOP BRANDS LOGOS STRIP
+   ========================================================================== */
+.ws-brand-strip {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--ws-border-light);
+  border-bottom: 1px solid var(--ws-border-light);
+  background-color: #ffffff;
+}
+
+.ws-brand-logo-text {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+  color: #444;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.ws-brand-logo-text:hover {
+  color: var(--ws-nav-green);
+}
+
+/* ==========================================================================
+   TESTIMONIALS & NEWSLETTER (Wristwatches Only)
+   ========================================================================== */
+.ws-testimonial-card {
+  background-color: #ffffff;
+  border: 1px solid var(--ws-border-light);
+  border-radius: 12px;
+  padding: 1.75rem;
+  height: 100%;
+}
+
+.ws-newsletter-box {
+  background: linear-gradient(135deg, #0b2a22 0%, #061814 100%);
+  border-radius: 16px;
+  padding: 3.5rem 2.5rem;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.ws-footer {
+  background-color: #0b1411;
+  color: #8c9c96;
+  padding: 4.5rem 0 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.88rem;
+}
+
+.ws-footer-title {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ws-footer-link {
+  color: #8c9c96;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.6rem;
+  transition: var(--transition-smooth);
+}
+
+.ws-footer-link:hover {
+  color: var(--ws-gold-tan);
+}
+
+/* ==========================================================================
+   ACCESSIBILITY & REDUCED MOTION
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  .ws-hero-watch-img {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .ws-hero-title {
+    font-size: 2.4rem;
+  }
+  .ws-hero-watch-img {
+    max-height: 380px;
+  }
+  .ws-floating-price-card {
+    position: static;
+    margin: 1.5rem auto 0;
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ws-hero-title {
+    font-size: 1.85rem;
+  }
+  .ws-hero-watch-img {
+    max-height: 280px;
+  }
+  .ws-banner-img {
+    position: static;
+    display: block;
+    margin: 1.5rem auto 0;
+  }
+}

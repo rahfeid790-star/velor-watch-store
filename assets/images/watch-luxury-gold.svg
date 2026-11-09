@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="solidGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="35%" stop-color="#FBC02D"/>
+      <stop offset="70%" stop-color="#F57F17"/>
+      <stop offset="100%" stop-color="#FFF59D"/>
+    </linearGradient>
+
+    <linearGradient id="goldBracelet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C68400"/>
+      <stop offset="30%" stop-color="#FDD835"/>
+      <stop offset="50%" stop-color="#FFFDE7"/>
+      <stop offset="70%" stop-color="#FBC02D"/>
+      <stop offset="100%" stop-color="#B26A00"/>
+    </linearGradient>
+
+    <radialGradient id="champagneGoldDial" cx="45%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="45%" stop-color="#FFE082"/>
+      <stop offset="85%" stop-color="#FFCA28"/>
+      <stop offset="100%" stop-color="#FFA000"/>
+    </radialGradient>
+  </defs>
+
+  <!-- GOLD PRESIDENT BRACELET (Top) -->
+  <path d="M 210,40 L 290,40 L 280,160 L 220,160 Z" fill="url(#goldBracelet)" stroke="#B26A00" stroke-width="1.2"/>
+  <line x1="213" y1="75" x2="287" y2="75" stroke="#B26A00" stroke-width="1.5"/>
+  <line x1="216" y1="110" x2="284" y2="110" stroke="#B26A00" stroke-width="1.5"/>
+  <rect x="238" y="40" width="24" height="120" fill="#FFFFFF" opacity="0.3"/>
+
+  <!-- GOLD BRACELET (Bottom) -->
+  <path d="M 220,340 L 280,340 L 290,460 L 210,460 Z" fill="url(#goldBracelet)" stroke="#B26A00" stroke-width="1.2"/>
+  <line x1="218" y1="375" x2="282" y2="375" stroke="#B26A00" stroke-width="1.5"/>
+  <line x1="216" y1="410" x2="284" y2="410" stroke="#B26A00" stroke-width="1.5"/>
+  <rect x="238" y="340" width="24" height="120" fill="#FFFFFF" opacity="0.3"/>
+
+  <!-- LUGS & CROWN -->
+  <polygon points="190,145 230,135 215,200 180,190" fill="url(#solidGold)"/>
+  <polygon points="310,145 270,135 285,200 320,190" fill="url(#solidGold)"/>
+  <polygon points="190,355 230,365 215,300 180,310" fill="url(#solidGold)"/>
+  <polygon points="310,355 270,365 285,300 320,310" fill="url(#solidGold)"/>
+  <polygon points="368,238 380,240 380,260 368,262" fill="url(#solidGold)" stroke="#B26A00"/>
+
+  <!-- CASE & FLUTED GOLD BEZEL -->
+  <circle cx="250" cy="250" r="124" fill="url(#solidGold)" stroke="#9E6000" stroke-width="1.5"/>
+  <circle cx="250" cy="250" r="116" fill="#B26A00"/>
+  <!-- Fluted Grooves -->
+  <circle cx="250" cy="250" r="114" fill="none" stroke="url(#solidGold)" stroke-width="6" stroke-dasharray="2 3"/>
+
+  <circle cx="250" cy="250" r="102" fill="url(#solidGold)"/>
+  <!-- CHAMPAGNE SUNBURST DIAL -->
+  <circle cx="250" cy="250" r="96" fill="url(#champagneGoldDial)"/>
+
+  <!-- DAY WINDOW ARC AT 12 O'CLOCK -->
+  <path d="M 218,175 Q 250,165 282,175 L 285,188 Q 250,178 215,188 Z" fill="#FFFFFF" stroke="#B26A00"/>
+  <text x="250" y="184" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="800" fill="#000000" text-anchor="middle">MONDAY</text>
+
+  <!-- GOLD CROWN & BRAND -->
+  <text x="250" y="210" font-family="'Cinzel', serif" font-size="11" font-weight="700" letter-spacing="3" fill="#663D00" text-anchor="middle">ROLEX</text>
+  <text x="250" y="220" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" font-weight="700" letter-spacing="1" fill="#804D00" text-anchor="middle">DAY-DATE</text>
+
+  <!-- CYCLOPS DATE AT 3 O'CLOCK -->
+  <rect x="312" y="240" width="22" height="18" rx="2" fill="#FFFFFF" stroke="#B26A00"/>
+  <text x="323" y="253" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#000" text-anchor="middle">28</text>
+  <ellipse cx="323" cy="249" rx="16" ry="12" fill="#FFF" opacity="0.25"/>
+
+  <!-- BAGUETTE CUT HOUR INDICES -->
+  <rect x="290" y="195" width="4" height="12" rx="1" transform="rotate(30, 292, 201)" fill="#FFF" stroke="#B26A00"/>
+  <rect x="320" y="222" width="4" height="12" rx="1" transform="rotate(60, 322, 228)" fill="#FFF" stroke="#B26A00"/>
+  <rect x="320" y="260" width="4" height="12" rx="1" transform="rotate(120, 322, 266)" fill="#FFF" stroke="#B26A00"/>
+  <rect x="290" y="287" width="4" height="12" rx="1" transform="rotate(150, 292, 293)" fill="#FFF" stroke="#B26A00"/>
+  <rect x="248" y="322" width="4" height="12" rx="1" fill="#FFF" stroke="#B26A00"/>
+  <rect x="206" y="287" width="4" height="12" rx="1" transform="rotate(210, 208, 293)" fill="#FFF" stroke="#B26A00"/>
+  <rect x="176" y="260" width="4" height="12" rx="1" transform="rotate(240, 178, 266)" fill="#FFF" stroke="#B26A00"/>
+  <rect x="166" y="244" width="12" height="4" rx="1" fill="#FFF" stroke="#B26A00"/>
+  <rect x="176" y="222" width="4" height="12" rx="1" transform="rotate(300, 178, 228)" fill="#FFF" stroke="#B26A00"/>
+  <rect x="206" y="195" width="4" height="12" rx="1" transform="rotate(330, 208, 201)" fill="#FFF" stroke="#B26A00"/>
+
+  <!-- GOLD HANDS -->
+  <g transform="translate(250, 250) rotate(305)">
+    <path d="M -3.5,10 L -2.5,-58 L 0,-68 L 2.5,-58 L 3.5,10 Z" fill="url(#solidGold)" stroke="#804D00" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(250, 250) rotate(60)">
+    <path d="M -3,12 L -2,-82 L 0,-90 L 2,-82 L 3,12 Z" fill="url(#solidGold)" stroke="#804D00" stroke-width="0.8"/>
+  </g>
+  <circle cx="250" cy="250" r="5" fill="url(#solidGold)" stroke="#804D00"/>
+</svg>
